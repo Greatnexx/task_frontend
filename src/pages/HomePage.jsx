@@ -5,7 +5,7 @@ import { MdDashboard } from "react-icons/md";
 import { Spinner } from "@material-tailwind/react";
 import { CiSearch } from "react-icons/ci";
 
-const DashBoard = () => {
+const HomePage = () => {
   const [payments, setPayments] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -157,4 +157,4 @@ const DashBoard = () => {
   );
 };
 
-export default DashBoard;
+export default HomePage;

@@ -4,13 +4,14 @@ import {
 	Route,
 	RouterProvider,
 } from "react-router-dom";
-import DashBoard from "./pages/dashBoard";
+import HomePage from "./pages/HomePage";
 
 const App = () => {
 	const router = createBrowserRouter(
 		createRoutesFromElements(
 			<>
-					<Route path="/dashboard" index element={<DashBoard />} />	
+				
+					<Route path="/" index element={<HomePage />} />	
 				
 			</>
 		)
