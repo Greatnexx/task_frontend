@@ -4,7 +4,7 @@ import {
 	Route,
 	RouterProvider,
 } from "react-router-dom";
-import DashBoard from "./pages/dashBoard"
+import DashBoard from "./pages/dashBoard";
 
 const App = () => {
 	const router = createBrowserRouter(
