@@ -47,24 +47,24 @@ const HomePage = () => {
   };
 
   return (
-    <div className="grid grid-cols-12  overflow-y-auto h-screen space-x-6 scroll">
-      <div className="col-span-2 bg-[#19004F] overflow-y-auto cursor-pointer">
+    <div className="grid md:grid-cols-12  overflow-y-auto md:h-screen space-x-6 scroll">
+      <div className="md:col-span-2 bg-[#19004F] overflow-y-auto cursor-pointer">
         <img src={logo} alt="" className="m-auto mt-5" />
         <div className="py-3">
           <h1 className="text-[#fff] text-[20px] text-center">Menu</h1>
           <span className="flex items-center space-x-3 mt-7">
-            <MdDashboard className="text-[#F58220] ml-4 text-[25px]" />
-            <p className="text-[#fff]">Dashboard</p>
+            <MdDashboard className="text-[#F58220] ml-4 text-[40px] md:text-[25px]" />
+            <p className="text-[#fff] text-[25px] md:text-[18px]">Dashboard</p>
           </span>
-          <span className="flex items-center space-x-3 mt-7">
+          {/* <span className="flex items-center space-x-3 mt-7">
             <GrTransaction className="text-[#F58220] text-[25px] ml-4" />
             <p className="text-[#fff]">Transactions</p>
-          </span>
+          </span> */}
         </div>
       </div>
 
-      <div className="col-span-10 mt-4 overflow-y-scroll">
-        <h2 className="text-[25px] font-semibold ml-7">Transactions</h2>
+      <div className="md:col-span-10 mt-4 overflow-y-scroll">
+        <h2 className="text-[25px] font-semibold md:ml-7">Transactions</h2>
         <div className="relative flex items-center gap-3  mt-3 mb-6">
         <input
           type="search"
@@ -75,7 +75,7 @@ const HomePage = () => {
         />
           <CiSearch className="absolute left-2 text-[24px] text-gray-400  "  />
          </div>
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto ">
           <table className="min-w-full bg-white border border-gray-200">
             <thead>
               <tr>
